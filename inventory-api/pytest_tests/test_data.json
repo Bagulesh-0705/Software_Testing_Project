@@ -1,0 +1,35 @@
+[
+  {
+    "data": {
+      "name": "Valid Book",
+      "category": "books",
+      "price": 50,
+      "stock": 10
+    },
+    "expected": {
+      "status": 201
+    }
+  },
+  {
+    "data": {
+      "name": "",
+      "category": "books",
+      "price": 20,
+      "stock": 5
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "data": {
+      "name": "Cheap Electronics",
+      "category": "electronics",
+      "price": 5,
+      "stock": 2
+    },
+    "expected": {
+      "status": 400
+    }
+  }
+]
